@@ -36,6 +36,7 @@ if (selected == "Perhitungan Kadar Air Sampel") :
     st.title("Perhitungan mencari Kadar Air Sampel")
 
     st.write("Perhitungan Kadar Air Sampel") 
+    st.write(f"<div style='text-align:center'>{(Massa Setelah - Massa Sebelum)/(Massa Sampel x 100}</div>", unsafe_allow_html=True)
 
     massa_sebelum = st.number_input('Masukkan massa bahan sebelum dioven (g) :', format='%.4f')
     massa_setelah = st.number_input('Masukkan massa bahan setelah dioven (g) :', format='%.4f')
