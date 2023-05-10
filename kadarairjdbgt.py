@@ -63,6 +63,7 @@ if (selected == "Perhitungan Kadar Abu") :
         
 if (selected == "Kalkulator Faktor Gravimetri") :
     st.title("Kalkulator Faktor Gravimetri")
+    with st.center("Berat / (volume x Densitas)
 
     berat = st.number_input('Masukkan berat sampel dalam gram (g)', value=0.0)
     volume = st.number_input('Masukkan volume pelarut dalam mililiter (mL)', value=0.0)
