@@ -34,7 +34,7 @@ if (selected == "Identitas Kelompok") :
                         
 if (selected == "Perhitungan Kadar Air Sampel") :
     st.title("Perhitungan mencari Kadar Air Sampel")
-    st.writer("(Massa Setelah - Massa Sebelum) / (massa Sampel x 100)").center())
+    st.writer("(Massa Setelah - Massa Sebelum) / (massa Sampel x 100)")
 
     st.write("Perhitungan Kadar Air Sampel") 
     st.write("Massa Setelah - Massa Sebelum)/(Massa Sampel x 100")
@@ -51,6 +51,7 @@ if (selected == "Perhitungan Kadar Air Sampel") :
     
 if (selected == "Perhitungan Kadar Abu") :
     st.title ("Aplikasi Menghitung Kadar Abu")
+    st.writer("(Massa Setelah - Massa Sebelum) / (Massa Sampel x 100)")
 
     massa_sebelum = st.number_input('Masukkan massa bahan sebelum dibakar (g) :', format='%.4f')
     massa_setelah = st.number_input('Masukkan massa abu setelah dibakar (g) :', format='%.4f')
@@ -64,6 +65,7 @@ if (selected == "Perhitungan Kadar Abu") :
         
 if (selected == "Kalkulator Faktor Gravimetri") :
     st.title("Kalkulator Faktor Gravimetri")
+    st.writer("Berat / (Volume X Densitas)")
    
     berat = st.number_input('Masukkan berat sampel dalam gram (g)', value=0.0)
     volume = st.number_input('Masukkan volume pelarut dalam mililiter (mL)', value=0.0)
